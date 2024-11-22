@@ -1,0 +1,36 @@
+.header {
+  background-color: #f8f9fa;
+  color: black;
+  padding: 10px 20px;
+}
+
+.topBar {
+  background-color: #002b5c;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-links {
+  display: flex;
+  gap: 2rem; /* Adds spacing between the links */
+  align-items: center;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+  transition: color 0.3s ease;
+}
+
+.link:hover {
+  text-decoration: underline;
+  color: #002b5c; /* Blue hover color */
+}

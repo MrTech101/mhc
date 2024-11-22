@@ -1,0 +1,10 @@
+.categories {
+    margin: 20px 0;
+  }
+  
+  .categoryList {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+  }
+  

@@ -1,0 +1,88 @@
+.banner {
+  position: relative;
+  background-color: #e0f7fa;
+  height: 600px; /* Fixed height */
+  display: flex;
+  justify-content: flex-start; /* Align text content to the left */
+  align-items: center;
+  padding-left: 40px; /* Adds left padding for text */
+  overflow: hidden;
+}
+
+.banner-background {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 700px; /* Adjust size for better visibility */
+  height: 700px;
+  object-fit: contain; /* Prevent cropping */
+  opacity: 0.5; /* More visible background */
+  z-index: 1; /* Layer it above the parent background but below the main content */
+}
+
+.banner-image {
+  position: absolute;
+  top: 50%;
+  left: 65%; /* Moves the image slightly to the right */
+  transform: translate(-50%, -50%);
+  width: auto;
+  height: 100%; /* Ensures the image fits the height of the banner */
+  object-fit: contain; /* Prevents zooming or cropping */
+  z-index: 2; /* Layers above the circular background */
+}
+
+.banner-content {
+  position: relative;
+  z-index: 3; /* Layers above images */
+  text-align: left; /* Align text to the left */
+  color: #002b5c;
+  padding: 0 20px;
+}
+
+.banner-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 10px; /* Adds space below the title */
+}
+
+.banner-subtitle {
+  font-size: 1.25rem;
+  margin-top: 10px;
+  color: #555;
+}
+
+.banner-price {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 20px;
+}
+
+.banner-price-current {
+  font-size: 2.5rem;
+  color: #ff5722;
+  font-weight: bold;
+}
+
+.banner-price-old {
+  font-size: 1.5rem;
+  color: #999;
+  text-decoration: line-through;
+}
+
+.banner-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #ff5722;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 50px;
+  transition: background-color 0.3s ease;
+}
+
+.banner-button:hover {
+  background-color: #e64a19;
+}
